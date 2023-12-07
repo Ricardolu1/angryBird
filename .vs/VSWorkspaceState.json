@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assets",
+    "\\Packages"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\Assets\\Bird.cs",
   "PreviewInSolutionExplorer": false
 }

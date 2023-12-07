@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public enum BirdState
@@ -9,11 +10,13 @@ public enum BirdState
     AfterShoot
 }
 public class Bird : MonoBehaviour
-{   // �ȴ� ����ǰ �����
+{
     // Start is called before the first frame update
 
+    public BirdState state = BirdState.BeforeShoot;
 
-    public BirdState state = BirdState.BeforeShoot; 
+    private bool isMouseDown = false;
+
     void Start()
     {
 
@@ -22,23 +25,54 @@ public class Bird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           
+        switch (state)
+        {
+            case BirdState.Waiting:
+                break;
+            case BirdState.BeforeShoot:
+                MouseControl();
+                break;
+            case BirdState.AfterShoot:
+                break;
+            default:
+                break;
+        }
+
+
     }
-    
 
     private void OnMouseDown()
     {
-        
+        if (state == BirdState.BeforeShoot)
+        {
+            isMouseDown = true;
+        }
 
     }
 
-    private void OnMoun
 
 
-    
+
     private void OnMouseUp()
     {
-        
+        if (state == BirdState.BeforeShoot)
+        {
+            isMouseDown = false;
+        }
     }
 
+    private void MouseControl()
+    {
+        if (isMouseDown)
+        {
+            transform.position = getMounsePositon();
+        }
+    }
+
+    private Vector3 getMounsePositon()
+    {
+        Vector3 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mp.z = 0;
+        return mp;
+    }
 }
