@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Assets",
+    "\\Assets\\Scrips",
     "\\Packages"
   ],
-  "SelectedNode": "\\Assets\\Bird.cs",
+  "SelectedNode": "\\Assets\\Scrips\\Bird.cs",
   "PreviewInSolutionExplorer": false
 }

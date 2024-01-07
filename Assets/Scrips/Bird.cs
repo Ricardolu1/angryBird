@@ -17,6 +17,7 @@ public class Bird : MonoBehaviour
 
     private bool isMouseDown = false;
 
+    private float maxDistance = 2.4f;
     void Start()
     {
 
@@ -46,6 +47,7 @@ public class Bird : MonoBehaviour
         if (state == BirdState.BeforeShoot)
         {
             isMouseDown = true;
+            SlingShot.Instance.StartDraw(transform);
         }
 
     }
@@ -58,6 +60,7 @@ public class Bird : MonoBehaviour
         if (state == BirdState.BeforeShoot)
         {
             isMouseDown = false;
+            SlingShot.Instance.EndDraw();
         }
     }
 
@@ -71,8 +74,19 @@ public class Bird : MonoBehaviour
 
     private Vector3 getMounsePositon()
     {
+
+        Vector3 centerPoint = SlingShot.Instance.GetCenterPointPosition();
         Vector3 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mp.z = 0;
+        Vector3 mouseDistance = mp -  centerPoint;
+
+
+        float distance = mouseDistance.magnitude;
+        if (distance > maxDistance)
+        {
+            mp = mouseDistance.normalized * maxDistance + centerPoint;
+        }
+
         return mp;
     }
 }
