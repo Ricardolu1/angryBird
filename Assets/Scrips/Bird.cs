@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Unity.Properties;
 using UnityEngine;
 
 public enum BirdState
@@ -18,9 +19,13 @@ public class Bird : MonoBehaviour
     private bool isMouseDown = false;
 
     private float maxDistance = 2.4f;
+
+    public int flySpeed = 5;
+    private Rigidbody2D rgb;
     void Start()
     {
-
+        rgb = GetComponent<Rigidbody2D>();
+        rgb.bodyType = RigidbodyType2D.Static;
     }
 
     // Update is called once per frame
@@ -52,15 +57,13 @@ public class Bird : MonoBehaviour
 
     }
 
-
-
-
     private void OnMouseUp()
     {
         if (state == BirdState.BeforeShoot)
         {
             isMouseDown = false;
             SlingShot.Instance.EndDraw();
+            Fly();
         }
     }
 
@@ -78,7 +81,7 @@ public class Bird : MonoBehaviour
         Vector3 centerPoint = SlingShot.Instance.GetCenterPointPosition();
         Vector3 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mp.z = 0;
-        Vector3 mouseDistance = mp -  centerPoint;
+        Vector3 mouseDistance = mp - centerPoint;
 
 
         float distance = mouseDistance.magnitude;
@@ -89,4 +92,12 @@ public class Bird : MonoBehaviour
 
         return mp;
     }
+
+    private void Fly()
+    {
+        rgb.bodyType = RigidbodyType2D.Dynamic;
+        rgb.velocity = (SlingShot.Instance.GetCenterPointPosition() - transform.position).normalized * flySpeed;
+        state = BirdState.AfterShoot;
+    }
 }
+    

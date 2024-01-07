@@ -24,11 +24,12 @@ public class SlingShot : MonoBehaviour
     void Start()
     {
 
-        leftLineRenderer = transform.Find("LeftLineRenderer").GetComponent<LineRenderer>();
-        rightLineRenderer = transform.Find("RightLineRenderer").GetComponent<LineRenderer>();
+        leftLineRenderer = transform.Find("LeftLineRender").GetComponent<LineRenderer>();
+        rightLineRenderer = transform.Find("RightLineRender").GetComponent<LineRenderer>();
         leftPoint = transform.Find("LeftPoint");
         rightPoint = transform.Find("RightPoint");
         centerPoint = transform.Find("CenterPoint");
+        HideLine();
 
 
     }
@@ -46,10 +47,12 @@ public class SlingShot : MonoBehaviour
     {
         isDrawing = true;
         this.birdTransform = birdTransform;
+        ShowLine();
     }
     public void EndDraw()
     {
         isDrawing = false;
+        HideLine();
     }
 
     public void Draw()
@@ -68,4 +71,16 @@ public class SlingShot : MonoBehaviour
         return centerPoint.transform.position;
     }
 
+    private void HideLine()
+    {
+        leftLineRenderer.enabled = false;
+        rightLineRenderer.enabled = false;
+    }
+
+    private void ShowLine()
+    {
+        leftLineRenderer.enabled = true;
+        rightLineRenderer.enabled = true;
+
+    }
 }    
