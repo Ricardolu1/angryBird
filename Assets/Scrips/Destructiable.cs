@@ -24,6 +24,9 @@ public class Destructiable : MonoBehaviour
         if (currentHp < 0)
         {
             Dead();
+            
+            
+            
             return; 
         }
         else
