@@ -10,18 +10,17 @@ public enum BirdState
     BeforeShoot,
     AfterShoot
 }
+
 public class Bird : MonoBehaviour
 {
     // Start is called before the first frame update
-
     public BirdState state = BirdState.BeforeShoot;
 
     private bool isMouseDown = false;
-
-    private float maxDistance = 2.4f;
-
+    public float maxDistance = 2.4f;
     public int flySpeed = 5;
     private Rigidbody2D rgb;
+
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
@@ -29,7 +28,7 @@ public class Bird : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         switch (state)
         {
@@ -43,8 +42,6 @@ public class Bird : MonoBehaviour
             default:
                 break;
         }
-
-
     }
 
     private void OnMouseDown()
@@ -54,7 +51,6 @@ public class Bird : MonoBehaviour
             isMouseDown = true;
             SlingShot.Instance.StartDraw(transform);
         }
-
     }
 
     private void OnMouseUp()
@@ -77,12 +73,10 @@ public class Bird : MonoBehaviour
 
     private Vector3 getMounsePositon()
     {
-
         Vector3 centerPoint = SlingShot.Instance.GetCenterPointPosition();
         Vector3 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mp.z = 0;
         Vector3 mouseDistance = mp - centerPoint;
-
 
         float distance = mouseDistance.magnitude;
         if (distance > maxDistance)
@@ -100,4 +94,3 @@ public class Bird : MonoBehaviour
         state = BirdState.AfterShoot;
     }
 }
-    
