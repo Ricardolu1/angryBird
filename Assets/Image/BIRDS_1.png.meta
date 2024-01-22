@@ -480,34 +480,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_17
+      name: Boom7
       rect:
         serializedVersion: 2
-        x: 479
-        y: 819
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 214551bff63c9b544b22048ce3218e55
-      internalID: -1554439729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BIRDS_1_18
-      rect:
-        serializedVersion: 2
-        x: 495
-        y: 826
-        width: 28
-        height: 14
+        x: 449
+        y: 720
+        width: 127
+        height: 120
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -711,48 +690,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_28
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 760
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 158174676b8d2f04cb49c1324112e11c
-      internalID: -1499279005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BIRDS_1_29
-      rect:
-        serializedVersion: 2
-        x: 566
-        y: 772
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d653e06148aad2f48af6a2d59cc5f05e
-      internalID: 1808498244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BIRDS_1_30
       rect:
         serializedVersion: 2
@@ -816,48 +753,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_33
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 732
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd39b9f42576bbf4ca84ccb02258fc4c
-      internalID: 1367383439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BIRDS_1_34
-      rect:
-        serializedVersion: 2
-        x: 515
-        y: 719
-        width: 52
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17a7d6c3cb4c5ea478a1234504c470cc
-      internalID: -1562271422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BIRDS_1_35
       rect:
         serializedVersion: 2
@@ -879,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_36
+      name: Boom2
       rect:
         serializedVersion: 2
         x: 956
@@ -1530,7 +1425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_67
+      name: Boom1
       rect:
         serializedVersion: 2
         x: 1
@@ -1614,13 +1509,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_71
+      name: Boom6
       rect:
         serializedVersion: 2
-        x: 54
-        y: 483
-        width: 104
-        height: 47
+        x: 41
+        y: 408
+        width: 125
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1782,48 +1677,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_79
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 440
-        width: 18
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17882ade8ceadb04badf80de0f879b79
-      internalID: -1069286302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BIRDS_1_80
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 407
-        width: 68
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4fcd92c345bed848a838db7ff29a971
-      internalID: 603063424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BIRDS_1_81
       rect:
         serializedVersion: 2
@@ -1929,27 +1782,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_86
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 415
-        width: 33
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51c5a5938d09746469ea84bc804dd7a2
-      internalID: 239945679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BIRDS_1_87
       rect:
         serializedVersion: 2
@@ -1971,7 +1803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_88
+      name: Boom3
       rect:
         serializedVersion: 2
         x: 545
@@ -2139,7 +1971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_96
+      name: Boom5
       rect:
         serializedVersion: 2
         x: 41
@@ -2979,7 +2811,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_136
+      name: Boom4
       rect:
         serializedVersion: 2
         x: 41
@@ -3965,6 +3797,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: BIRDS_1_0
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 372
+        width: 158
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1736c397e26997409e0c7ddc38b0411
+      internalID: -1163385054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3976,6 +3829,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      BIRDS_1_0: -1163385054
       BIRDS_1_1: 2044495072
       BIRDS_1_10: 2015290092
       BIRDS_1_100: -1520204618
@@ -4017,7 +3871,6 @@ TextureImporter:
       BIRDS_1_133: 496438449
       BIRDS_1_134: 1309005928
       BIRDS_1_135: 738867649
-      BIRDS_1_136: -438249304
       BIRDS_1_137: -1969648705
       BIRDS_1_138: 1087356384
       BIRDS_1_139: -1350149578
@@ -4065,7 +3918,6 @@ TextureImporter:
       BIRDS_1_177: -653820608
       BIRDS_1_178: 1912420581
       BIRDS_1_179: -393545253
-      BIRDS_1_18: -1553569828
       BIRDS_1_180: -1413188348
       BIRDS_1_181: -1860443223
       BIRDS_1_182: -329771247
@@ -4088,7 +3940,6 @@ TextureImporter:
       BIRDS_1_33: 1367383439
       BIRDS_1_34: -1562271422
       BIRDS_1_35: 1540462180
-      BIRDS_1_36: -1249018677
       BIRDS_1_37: -249783866
       BIRDS_1_38: 1573004309
       BIRDS_1_39: 189750459
@@ -4122,12 +3973,10 @@ TextureImporter:
       BIRDS_1_64: 1764430307
       BIRDS_1_65: -1410798321
       BIRDS_1_66: -2144801630
-      BIRDS_1_67: 1849229691
       BIRDS_1_68: 792319838
       BIRDS_1_69: 1572718916
       BIRDS_1_7: 903828892
       BIRDS_1_70: 347678042
-      BIRDS_1_71: -933659840
       BIRDS_1_72: -329951932
       BIRDS_1_73: 1518109478
       BIRDS_1_74: -1797811549
@@ -4144,7 +3993,6 @@ TextureImporter:
       BIRDS_1_85: 1381716806
       BIRDS_1_86: 239945679
       BIRDS_1_87: 1443646561
-      BIRDS_1_88: -365382155
       BIRDS_1_89: 968288348
       BIRDS_1_9: -1672980096
       BIRDS_1_90: 1852941218
@@ -4153,9 +4001,15 @@ TextureImporter:
       BIRDS_1_93: -9607827
       BIRDS_1_94: -192975254
       BIRDS_1_95: 1294675934
-      BIRDS_1_96: -1788637263
       BIRDS_1_97: -1880900354
       BIRDS_1_99: -826968535
+      Boom1: 1849229691
+      Boom2: -1249018677
+      Boom3: -365382155
+      Boom4: -438249304
+      Boom5: -1788637263
+      Boom6: -933659840
+      Boom7: -1553569828
       RedBird: -76496962
       Slingshot_Left: 382966220
       Slingshot_Right: -1023074172

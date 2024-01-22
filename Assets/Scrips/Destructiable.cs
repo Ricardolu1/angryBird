@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Destructiable : MonoBehaviour
-{
+{   
     public int maxHp = 100;
     private int currentHp;
     public List<Sprite> injuredSpriteList;
@@ -12,17 +12,15 @@ public class Destructiable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        
         print((int)(-0.5));
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentHp = maxHp;
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         print(collision.relativeVelocity.magnitude);
         if (currentHp < 0)
-        {
+        {   
             Dead();
             return; 
         }
@@ -48,3 +46,4 @@ public class Destructiable : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
