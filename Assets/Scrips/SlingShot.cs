@@ -20,7 +20,6 @@ public class SlingShot : MonoBehaviour
         Instance = this;
     }
 
-
     void Start()
     {
 
@@ -30,7 +29,6 @@ public class SlingShot : MonoBehaviour
         rightPoint = transform.Find("RightPoint");
         centerPoint = transform.Find("CenterPoint");
         HideLine();
-
 
     }
 
