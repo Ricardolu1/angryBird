@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2385070317433150023}
   - component: {fileID: 4414618901551892907}
   - component: {fileID: 4543265872582063609}
-  - component: {fileID: -435548318550752207}
+  - component: {fileID: 7540295604774575831}
   m_Layer: 0
   m_Name: Boom1
   m_TagString: Untagged
@@ -107,7 +107,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-435548318550752207
+--- !u!114 &7540295604774575831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,9 +116,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 347477694746154159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Script: {fileID: 11500000, guid: d3c70d4d94f07ad40bb9f94a1e8fb250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
