@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class Destructiable : MonoBehaviour
@@ -40,6 +42,7 @@ public class Destructiable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
     }
 
     private void Dead()

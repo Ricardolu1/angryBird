@@ -17,8 +17,9 @@ public class Bird : MonoBehaviour
     public BirdState state = BirdState.BeforeShoot;
     private bool isMouseDown = false;
     public float maxDistance = 2.4f;
-    public int flySpeed = 5;
+    public int flySpeed = 54;
     private Rigidbody2D rgb;
+    
     
     void Start()
     {
