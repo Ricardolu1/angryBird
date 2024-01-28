@@ -94,4 +94,10 @@ public class Bird : MonoBehaviour
         rgb.velocity = (SlingShot.Instance.GetCenterPointPosition() - transform.position).normalized * flySpeed;
         state = BirdState.AfterShoot;
     }
+
+    public void GoState(Vector3 position)
+    {
+        state = BirdState.BeforeShoot;
+        transform.position = position;
+    }
 }

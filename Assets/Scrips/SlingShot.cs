@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SlingShot : MonoBehaviour
 {
-    public static SlingShot Instance {  get; private set; }  
+    public static SlingShot Instance { get; private set; }
     private LineRenderer leftLineRenderer;
     private LineRenderer rightLineRenderer;
     private Transform leftPoint;
@@ -18,18 +18,16 @@ public class SlingShot : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-
-    void Start()
-    {
-
         leftLineRenderer = transform.Find("LeftLineRender").GetComponent<LineRenderer>();
         rightLineRenderer = transform.Find("RightLineRender").GetComponent<LineRenderer>();
         leftPoint = transform.Find("LeftPoint");
         rightPoint = transform.Find("RightPoint");
         centerPoint = transform.Find("CenterPoint");
-        HideLine();
+    }
 
+    void Start()
+    {
+        HideLine();
     }
 
     // Update is called once per frame
@@ -47,6 +45,7 @@ public class SlingShot : MonoBehaviour
         this.birdTransform = birdTransform;
         ShowLine();
     }
+
     public void EndDraw()
     {
         isDrawing = false;
@@ -61,7 +60,6 @@ public class SlingShot : MonoBehaviour
         leftLineRenderer.SetPosition(1, leftPoint.position);
         rightLineRenderer.SetPosition(0, birdPosition);
         rightLineRenderer.SetPosition(1, rightPoint.position);
-
     }
 
     public Vector3 GetCenterPointPosition()
@@ -79,6 +77,5 @@ public class SlingShot : MonoBehaviour
     {
         leftLineRenderer.enabled = true;
         rightLineRenderer.enabled = true;
-
     }
-}    
+}
