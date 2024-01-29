@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using Unity.VisualScripting;
 using UnityEditorInternal;
 using UnityEngine;
@@ -32,12 +33,13 @@ public class Destructiable : MonoBehaviour
         }
         else
         {
-            currentHp -= (int)(collision.relativeVelocity.magnitude * 8);
-            int index = (int)(((maxHp - currentHp) / (maxHp / injuredSpriteList.Count + 1.0f))) - 1;
+            currentHp -= (int)(collision.relativeVelocity.magnitude * 14);
+            // int index = Math.floor((maxHp - currentHp) / (maxHp / injuredSpriteList.Count));
+            int index = (int)Math.Floor(((maxHp - currentHp) / (maxHp / injuredSpriteList.Count + 0f)));
 
             if (index != -1 && index < injuredSpriteList.Count)
             {
-                print("aaa"+ GetComponent<GameObject>());
+                print("aaa" + GetComponent<GameObject>());
                 print("asdas" + spriteRenderer.sprite);
                 print("更改参数后:" + index);
                 print("更改参数后:" + (maxHp - currentHp));
