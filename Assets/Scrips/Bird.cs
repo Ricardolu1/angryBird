@@ -8,7 +8,8 @@ public enum BirdState
 {
     Waiting,
     BeforeShoot,
-    AfterShoot
+    AfterShoot,
+    WaitToDie
 }
 
 public class Bird : MonoBehaviour
@@ -17,17 +18,16 @@ public class Bird : MonoBehaviour
     public BirdState state = BirdState.BeforeShoot;
     private bool isMouseDown = false;
     public float maxDistance = 2.4f;
-    public int flySpeed = 54;
+    public int flySpeed = 24;
     private Rigidbody2D rgb;
-    
-    
+
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();
         rgb.bodyType = RigidbodyType2D.Static;
     }
 
-    
+
     // Update is called once per frame
     private void Update()
     {
@@ -39,6 +39,10 @@ public class Bird : MonoBehaviour
                 MouseControl();
                 break;
             case BirdState.AfterShoot:
+                StopControl();
+                break;
+            case BirdState.WaitToDie:
+                LoadNextBird();
                 break;
             default:
                 break;
@@ -99,5 +103,21 @@ public class Bird : MonoBehaviour
     {
         state = BirdState.BeforeShoot;
         transform.position = position;
+    }
+
+    private void StopControl()
+    {
+        if (rgb.velocity.magnitude < 0.1f)
+        {
+            state = BirdState.WaitToDie;
+            Invoke("LoadNextBird", 1.0f);
+        }
+    }
+
+    private void LoadNextBird()
+    {
+        Destroy(gameObject);
+        GameObject.Instantiate(Resources.Load("boom1"), transform.position, Quaternion.identity);
+        GameManager.Instance.LoadNextBird();
     }
 }

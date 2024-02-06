@@ -33,6 +33,7 @@ public class Destructiable : MonoBehaviour
             Dead();
             return;
         }
+        
         else
         {
             currentHp -= (int)(collision.relativeVelocity.magnitude * 8);
@@ -41,13 +42,13 @@ public class Destructiable : MonoBehaviour
             if (index != -1 && index < injuredSpriteList.Count)
             {
                 
-                print("aaa"+ GetComponent<GameObject>());
-                print("asdas" + spriteRenderer.sprite);
-                print("更改参数后:" + index);
-                print("更改参数后:asd" + index);
-                print("更改参数后:asda" + index);
-                print("更改参数后:asd" + index);
-                print("更改参数后:ddd" + (maxHp - currentHp));
+                // print("aaa"+ GetComponent<GameObject>());
+                // print("asdas" + spriteRenderer.sprite);
+                // print("更改参数后:" + index);
+                // print("更改参数后:asd" + index);
+                // print("更改参数后:asda" + index);
+                // print("更改参数后:asd" + index);
+                // print("更改参数后:ddd" + (maxHp - currentHp));
                 spriteRenderer.sprite = injuredSpriteList[index];
             }
         }
@@ -58,11 +59,10 @@ public class Destructiable : MonoBehaviour
     {
     }
 
-    private void Dead()
+    public virtual void Dead()
     {
         GameObject.Instantiate(boomPrefab, transform.position, Quaternion.identity);
      
-        
         Destroy(gameObject);
     }
 }

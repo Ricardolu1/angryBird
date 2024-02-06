@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4099159521442940609}
   - component: {fileID: 5875056197606487971}
   - component: {fileID: 6635664876152273153}
+  - component: {fileID: 84692132645433778}
   m_Layer: 0
   m_Name: RedBird
   m_TagString: Untagged
@@ -98,8 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b2a1791e477b54ebee0a46bbe98b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMounseDown: 1
   state: 1
+  maxDistance: 2.4
+  flySpeed: 24
 --- !u!58 &6635664876152273153
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -135,3 +137,30 @@ CircleCollider2D:
   m_Offset: {x: 0.03983097, y: -0.06626343}
   serializedVersion: 2
   m_Radius: 0.4161346
+--- !u!50 &84692132645433778
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207778882539965484}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 1.98
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
