@@ -29,7 +29,6 @@ public class Destructiable : MonoBehaviour
         print(collision.relativeVelocity.magnitude);
         if (currentHp < 0)
         {
-            
             Dead();
             return;
         }
@@ -62,7 +61,6 @@ public class Destructiable : MonoBehaviour
     public virtual void Dead()
     {
         GameObject.Instantiate(boomPrefab, transform.position, Quaternion.identity);
-     
         Destroy(gameObject);
     }
 }

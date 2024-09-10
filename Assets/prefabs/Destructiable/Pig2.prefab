@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5812065850180139823}
   - component: {fileID: 7381548986462811810}
   - component: {fileID: 4190186213834846017}
-  - component: {fileID: 5796743726420095166}
+  - component: {fileID: 828604251656436966}
   m_Layer: 0
   m_Name: Pig2
   m_TagString: Untagged
@@ -136,7 +136,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5796743726420095166
+--- !u!114 &828604251656436966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,9 +158,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7613385538029480897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80d405c8dc654c74aab9bd62750737a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 796d9ebd4cb806e4493a8115958ad429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
   injuredSpriteList: []
   spriteRenderer: {fileID: 0}
+  score: 5000

@@ -18,15 +18,15 @@ public class Bird : MonoBehaviour
     public BirdState state = BirdState.BeforeShoot;
     private bool isMouseDown = false;
     public float maxDistance = 2.4f;
-    public int flySpeed = 24;
+    public int flySpeed;
     private Rigidbody2D rgb;
 
     void Start()
     {
+        flySpeed = 16;
         rgb = GetComponent<Rigidbody2D>();
         rgb.bodyType = RigidbodyType2D.Static;
     }
-
 
     // Update is called once per frame
     private void Update()

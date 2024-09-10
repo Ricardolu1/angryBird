@@ -23,6 +23,7 @@ public class SlingShot : MonoBehaviour
         leftPoint = transform.Find("LeftPoint");
         rightPoint = transform.Find("RightPoint");
         centerPoint = transform.Find("CenterPoint");
+        
     }
 
     void Start()

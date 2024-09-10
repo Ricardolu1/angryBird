@@ -11,19 +11,21 @@ public class GameManager : MonoBehaviour
     private int index = -1;
     private int pigTotalCount;
     private int pigDeadCount;
+    private FollowTarget cameraTarget;
     
     private void Awake()
     {
         Instance = this;
         pigDeadCount = 0;
-        
     }
     
     void Start()
     {
         birdList = FindObjectsByType<Bird>(FindObjectsSortMode.None);
         pigTotalCount = FindObjectsByType<Pig>(FindObjectsSortMode.None).Length ;
+        cameraTarget = Camera.main.GetComponent<FollowTarget>();
         LoadNextBird();
+        print("asdasdasd"+cameraTarget);
     }
     
     // Update is called once per frame
@@ -36,11 +38,12 @@ public class GameManager : MonoBehaviour
         index++;
         if (index >= birdList.Length)
         {
-            GameEnd();
+            GameEnd(); 
         }
         else
         {
             birdList[index].GoState(SlingShot.Instance.GetCenterPointPosition());
+            cameraTarget.SetTarget(birdList[index].transform);
         }
     }
 
