@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4207778882539965484
+--- !u!1 &2568766016743114555
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6515377041273047006}
-  - component: {fileID: 4099159521442940609}
-  - component: {fileID: 5875056197606487971}
-  - component: {fileID: 6635664876152273153}
-  - component: {fileID: 84692132645433778}
-  - component: {fileID: 7406369289050311711}
+  - component: {fileID: 5260950257166319709}
+  - component: {fileID: 642803753159541986}
+  - component: {fileID: 5418201837960348686}
+  - component: {fileID: 3878969134370681964}
+  - component: {fileID: 369429943696232589}
+  - component: {fileID: 4961481068754892031}
   m_Layer: 0
-  m_Name: RedBird
+  m_Name: BlackBird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6515377041273047006
+--- !u!4 &5260950257166319709
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4207778882539965484}
+  m_GameObject: {fileID: 2568766016743114555}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3929796, y: -1.209678, z: 0}
-  m_LocalScale: {x: 1.0059, y: 1.0059, z: 1.0059}
+  m_LocalPosition: {x: -10.608, y: -1.801, z: 0}
+  m_LocalScale: {x: 0.9082036, y: 0.9082036, z: 0.9082036}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4099159521442940609
+--- !u!212 &642803753159541986
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4207778882539965484}
+  m_GameObject: {fileID: 2568766016743114555}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 1428336601
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -76496962, guid: cf5d634a08c57f74aa2dfda190144a36, type: 3}
+  m_Sprite: {fileID: 468227362, guid: cf5d634a08c57f74aa2dfda190144a36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,28 +88,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5875056197606487971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4207778882539965484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05b2a1791e477b54ebee0a46bbe98b4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 1
-  maxDistance: 2.4
-  flySpeed: 12
---- !u!58 &6635664876152273153
+--- !u!58 &5418201837960348686
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4207778882539965484}
+  m_GameObject: {fileID: 2568766016743114555}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -135,25 +120,25 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03983097, y: -0.06626343}
+  m_Offset: {x: 0.014025795, y: -0.051429577}
   serializedVersion: 2
-  m_Radius: 0.4161346
---- !u!50 &84692132645433778
+  m_Radius: 0.3205529
+--- !u!50 &3878969134370681964
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4207778882539965484}
+  m_GameObject: {fileID: 2568766016743114555}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 2
-  m_GravityScale: 1.5
+  m_AngularDrag: 2.59
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -165,14 +150,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!96 &7406369289050311711
+--- !u!96 &369429943696232589
 TrailRenderer:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4207778882539965484}
+  m_GameObject: {fileID: 2568766016743114555}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -216,8 +201,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.011254127
-        value: 0.9667855
+        time: 0.011719246
+        value: 0.52941185
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -238,8 +223,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.7294118, g: 0.13725491, b: 0.15005156, a: 0.8509804}
-      key1: {r: 0.7294118, g: 0.13725491, b: 0.2627451, a: 0.8509804}
+      key0: {r: 0, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 0.54509807}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -247,14 +232,14 @@ TrailRenderer:
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 64224
+      ctime1: 65535
       ctime2: 0
       ctime3: 0
       ctime4: 0
       ctime5: 0
       ctime6: 0
       ctime7: 0
-      atime0: 0
+      atime0: 64841
       atime1: 65535
       atime2: 0
       atime3: 0
@@ -278,3 +263,21 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &4961481068754892031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568766016743114555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bf2f23f95e9464ba38cf4a1348c7ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 1
+  maxDistance: 2.45
+  flySpeed: 14
+  isFlying: 0
+  isHaveUsedSkill: 0
+  boomRadius: 2.5

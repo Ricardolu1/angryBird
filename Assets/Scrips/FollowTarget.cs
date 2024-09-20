@@ -24,7 +24,6 @@ public class FollowTarget : MonoBehaviour
 
             position.x = Mathf.Clamp(position.x, 0, 20);
             transform.position = Vector3.Lerp(transform.position, position, Time.deltaTime * smoothSpeed);
-            print("FFASDASDASD");
         }
 
     }

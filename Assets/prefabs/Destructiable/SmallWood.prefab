@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 100
   injuredSpriteList:
+  - {fileID: 1050710606, guid: af5ed7386fce889458fd273bf960fc58, type: 3}
   - {fileID: 1515973851, guid: af5ed7386fce889458fd273bf960fc58, type: 3}
   - {fileID: 1936218572, guid: af5ed7386fce889458fd273bf960fc58, type: 3}
   spriteRenderer: {fileID: 0}

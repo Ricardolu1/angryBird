@@ -31,12 +31,10 @@ public class ScoreManager : MonoBehaviour
     public void ShowScore(Vector3 position, int score)
     {
         GameObject scoreGo = GameObject.Instantiate(scorePrefab, position, Quaternion.identity);
-        Sprite[] scoreArray;
-        scoreDict.TryGetValue(score, out scoreArray);
+        scoreDict.TryGetValue(score, out Sprite[] scoreArray);
         int index = UnityEngine.Random.Range(0, scoreArray.Length);
         Sprite sprite = scoreArray[index];
         scoreGo.GetComponent<SpriteRenderer>().sprite = sprite;
         Destroy(scoreGo, 1f);
-
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using Unity.Properties;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum BirdState
@@ -17,15 +17,19 @@ public class Bird : MonoBehaviour
     // Start is called before the first frame update
     public BirdState state = BirdState.BeforeShoot;
     private bool isMouseDown = false;
-    public float maxDistance = 2.4f;
+    public float maxDistance = 2.45f;
     public int flySpeed;
-    private Rigidbody2D rgb;
+    protected Rigidbody2D rgd;
+    public bool isFlying = false;
+    public bool isHaveUsedSkill = false;
+    private Collider2D colliderObj;
 
     void Start()
     {
-        flySpeed = 16;
-        rgb = GetComponent<Rigidbody2D>();
-        rgb.bodyType = RigidbodyType2D.Static;
+        flySpeed = 14;
+        rgd = GetComponent<Rigidbody2D>();
+        rgd.bodyType = RigidbodyType2D.Static;
+        colliderObj = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -34,27 +38,57 @@ public class Bird : MonoBehaviour
         switch (state)
         {
             case BirdState.Waiting:
+                WaitControl();
                 break;
             case BirdState.BeforeShoot:
                 MouseControl();
                 break;
             case BirdState.AfterShoot:
                 StopControl();
+                SkillControl();
                 break;
             case BirdState.WaitToDie:
-                LoadNextBird();
                 break;
             default:
                 break;
         }
     }
 
+    private void WaitControl()
+    {
+        colliderObj = GetComponent<Collider2D>();
+    }
+
+    private void SkillControl()
+    {
+        if (isHaveUsedSkill) return;
+
+        if (isFlying == false && Input.GetMouseButtonDown(0))
+        {
+            isHaveUsedSkill = true;
+            FlyingSkill();
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            isHaveUsedSkill = true;
+            FullTimeSkill();
+        }
+    }
+    protected virtual void FlyingSkill()
+    {
+
+    }
+    protected virtual void FullTimeSkill()
+    {
+        isHaveUsedSkill = true;
+    }
     private void OnMouseDown()
     {
         if (state == BirdState.BeforeShoot)
         {
             isMouseDown = true;
             SlingShot.Instance.StartDraw(transform);
+            AudioManager.Instance.PlayBirdSelect(transform.position);
         }
     }
 
@@ -94,9 +128,11 @@ public class Bird : MonoBehaviour
 
     private void Fly()
     {
-        rgb.bodyType = RigidbodyType2D.Dynamic;
-        rgb.velocity = (SlingShot.Instance.GetCenterPointPosition() - transform.position).normalized * flySpeed;
+        rgd.bodyType = RigidbodyType2D.Dynamic;
+        rgd.velocity = (SlingShot.Instance.GetCenterPointPosition() - transform.position).normalized * flySpeed;
         state = BirdState.AfterShoot;
+
+        AudioManager.Instance.PlayBirdFlying(transform.position);
     }
 
     public void GoState(Vector3 position)
@@ -107,17 +143,31 @@ public class Bird : MonoBehaviour
 
     private void StopControl()
     {
-        if (rgb.velocity.magnitude < 0.1f)
+        if (rgd.velocity.magnitude < 0.1f)
         {
             state = BirdState.WaitToDie;
             Invoke("LoadNextBird", 1.0f);
         }
     }
 
-    private void LoadNextBird()
+    protected void LoadNextBird()
     {
         Destroy(gameObject);
         GameObject.Instantiate(Resources.Load("boom1"), transform.position, Quaternion.identity);
         GameManager.Instance.LoadNextBird();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (state == BirdState.AfterShoot)
+        {
+            isFlying = true;
+        }
+        if (state == BirdState.AfterShoot && collision.relativeVelocity.magnitude > 5)
+        {
+            AudioManager.Instance.PlayBirdCollison(transform.position);
+        }
+
+    }
+
 }

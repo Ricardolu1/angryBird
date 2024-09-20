@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7eb7f84b8c7dd554782a2345e51253c4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - birdCollision: {instanceID: 0}
+  - birdSelect: {instanceID: 0}
+  - birdFlying: {instanceID: 0}
+  - woodCollision: {instanceID: 0}
+  - woodDestroyed: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

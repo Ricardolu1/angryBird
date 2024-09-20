@@ -12,4 +12,14 @@ public class Pig : Destructiable
           GameManager.Instance.OnPigDead();
           ScoreManager.Instance.ShowScore(transform.position, score);
      }
+
+     protected override void PlayAudioCollision()
+     {
+          AudioManager.Instance.PlayPigCollision(transform.position);
+     }
+     protected override void PlayAudioDestroyed()
+     {
+          AudioManager.Instance.PlayPigDestroyed(transform.position);
+          
+     }
 }

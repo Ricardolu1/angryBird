@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 130
   injuredSpriteList:
+  - {fileID: -212626595, guid: af5ed7386fce889458fd273bf960fc58, type: 3}
   - {fileID: 147579081, guid: af5ed7386fce889458fd273bf960fc58, type: 3}
   - {fileID: -724829570, guid: af5ed7386fce889458fd273bf960fc58, type: 3}
   - {fileID: -397916407, guid: af5ed7386fce889458fd273bf960fc58, type: 3}

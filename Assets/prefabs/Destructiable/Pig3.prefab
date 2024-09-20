@@ -101,7 +101,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 1.04
+  m_AngularDrag: 2
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -162,6 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
-  injuredSpriteList: []
+  injuredSpriteList:
+  - {fileID: 2044495072, guid: cf5d634a08c57f74aa2dfda190144a36, type: 3}
+  - {fileID: 752642159, guid: cf5d634a08c57f74aa2dfda190144a36, type: 3}
+  - {fileID: 373877559, guid: cf5d634a08c57f74aa2dfda190144a36, type: 3}
   spriteRenderer: {fileID: 0}
   score: 10000
