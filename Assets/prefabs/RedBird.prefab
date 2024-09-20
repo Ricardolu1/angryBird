@@ -103,6 +103,8 @@ MonoBehaviour:
   state: 1
   maxDistance: 2.4
   flySpeed: 12
+  isFlying: 0
+  isHaveUsedSkill: 0
 --- !u!58 &6635664876152273153
 CircleCollider2D:
   m_ObjectHideFlags: 0
