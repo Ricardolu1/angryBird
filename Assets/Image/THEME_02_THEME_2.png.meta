@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,8 +37,8 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -123,16 +123,16 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: THEME_02_THEME_2_0
+      name: Bg_up_02
       rect:
         serializedVersion: 2
         x: 0
-        y: 277
+        y: 187
         width: 490
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 126, z: 0, w: 1}
+        height: 322
+      alignment: 9
+      pivot: {x: 1.3273541, y: 0.34428477}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -144,22 +144,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: THEME_02_THEME_2_1
+      name: Bg_down_02
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 357
-        height: 189
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66823940d3ff2148a621e22c4b27823
-      internalID: 602724514
+      spriteID: a29c3dbe000533f4bb15b13211c39204
+      internalID: -158538596
       vertices: []
       indices: 
       edges: []
@@ -175,8 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      THEME_02_THEME_2_0: 627037633
-      THEME_02_THEME_2_1: 602724514
+      Bg_down_02: -158538596
+      Bg_up_02: 627037633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

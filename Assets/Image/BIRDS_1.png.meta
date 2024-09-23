@@ -1698,7 +1698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BIRDS_1_82
+      name: Fail_Pig
       rect:
         serializedVersion: 2
         x: 281
@@ -3975,7 +3975,6 @@ TextureImporter:
       BIRDS_1_79: -1069286302
       BIRDS_1_80: 603063424
       BIRDS_1_81: -1476294014
-      BIRDS_1_82: -97266577
       BIRDS_1_83: 1693862024
       BIRDS_1_84: -306566674
       BIRDS_1_85: 1381716806
@@ -4000,6 +3999,7 @@ TextureImporter:
       Boom5: -1788637263
       Boom6: -933659840
       Boom7: -1553569828
+      Fail_Pig: -97266577
       Pig1_1: 1132877223
       Pig1_2: 1586888018
       Pig2_1: -329951932
