@@ -27,10 +27,12 @@ public class PauseUI : MonoBehaviour
     public void OnRestartButtonClick()
     {
         //todo
+        GameManager.Instance.RestarLevel();
     }
     public void OnLevlListButtonClick()
     {
         //todo
+        GameManager.Instance.LevelList();
     }
 
 

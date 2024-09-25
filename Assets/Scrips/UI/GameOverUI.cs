@@ -20,30 +20,42 @@ public class GameOverUI : MonoBehaviour
     }
     public void Show(int startCount)
     {
-        anim.SetTrigger("IsShow");
-        this.startCount  = startCount;
-        ShowStar();
+        anim.SetBool("IsShow",true);
+        print("gameOVerioisisisis");
+        this.startCount = startCount;
     }
 
-    private void Start(){
-        Show(2);
-        
+    private void Start()
+    {
     }
 
     public void ShowStar()
     {
-        if(startCount==0){
+        if (startCount == 0)
+        {
             failPig.SetActive(true);
         }
-        if(startCount>=1){
+        if (startCount >= 1)
+        {
             starUI1.Show();
         }
-        if(startCount>=2){
+        if (startCount >= 2)
+        {
             starUI2.Show();
+            print("show222222");
         }
-        if(startCount>=3){
+        if (startCount >= 3)
+        {
             starUI3.Show();
         }
-        print("startCount"+startCount);
+        print("startCount" + startCount);
+    }
+    public void OnRestarBtnClick()
+    {
+        GameManager.Instance.RestarLevel();
+    }
+    public void OnLevelListBtnClick()
+    {
+        GameManager.Instance.LevelList();
     }
 }

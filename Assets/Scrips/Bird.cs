@@ -144,7 +144,7 @@ public class Bird : MonoBehaviour
 
     private void StopControl()
     {
-        if (rgd.velocity.magnitude < 0.1f)
+        if (rgd.velocity.magnitude < 0.3f)
         {
             state = BirdState.WaitToDie;
             Invoke("LoadNextBird", 1.0f);
