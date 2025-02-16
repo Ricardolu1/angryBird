@@ -131,7 +131,7 @@ TextureImporter:
         width: 158
         height: 508
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
         width: 158
         height: 508
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
         width: 158
         height: 508
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
         width: 155
         height: 504
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,7 +215,7 @@ TextureImporter:
         width: 155
         height: 504
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,7 +236,7 @@ TextureImporter:
         width: 155
         height: 504
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_6
+      name: Level_Unlock
       rect:
         serializedVersion: 2
         x: 1
@@ -257,7 +257,7 @@ TextureImporter:
         width: 115
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +278,7 @@ TextureImporter:
         width: 29
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +299,7 @@ TextureImporter:
         width: 10
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,15 +312,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_9
+      name: Level_Unlock22
       rect:
         serializedVersion: 2
-        x: 160
+        x: 161
         y: 6
         width: 115
         height: 232
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +341,7 @@ TextureImporter:
         width: 112
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_11
+      name: Star2
       rect:
         serializedVersion: 2
         x: 481
@@ -362,7 +362,7 @@ TextureImporter:
         width: 96
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,7 +383,7 @@ TextureImporter:
         width: 42
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,7 +404,7 @@ TextureImporter:
         width: 293
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,7 +425,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,7 +446,7 @@ TextureImporter:
         width: 29
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,15 +459,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_16
+      name: Star1
       rect:
         serializedVersion: 2
         x: 481
         y: 166
-        width: 65
+        width: 96
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,57 +480,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_17
-      rect:
-        serializedVersion: 2
-        x: 547
-        y: 171
-        width: 30
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66c6c3eb7cfb3c54e8246f5fdc3c9ef4
-      internalID: -1999210414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_18
+      name: Star0
       rect:
         serializedVersion: 2
         x: 481
-        y: 134
-        width: 31
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e488a4906217f440a14c4d56bfc8312
-      internalID: -1680051901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_19
-      rect:
-        serializedVersion: 2
-        x: 513
         y: 133
-        width: 32
+        width: 96
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -543,28 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_20
-      rect:
-        serializedVersion: 2
-        x: 546
-        y: 134
-        width: 30
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66c189e3d95b6434cbe3e3aa2489c2ef
-      internalID: 1390205165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_21
+      name: Level_Lock
       rect:
         serializedVersion: 2
         x: 1
@@ -572,7 +509,7 @@ TextureImporter:
         width: 115
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,7 +530,7 @@ TextureImporter:
         width: 39
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,7 +551,7 @@ TextureImporter:
         width: 125
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,7 +572,7 @@ TextureImporter:
         width: 46
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,7 +593,7 @@ TextureImporter:
         width: 41
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -669,15 +606,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MENU_LEVELSELECTION_1_26
+      name: Star3
       rect:
         serializedVersion: 2
         x: 321
         y: 8
-        width: 98
+        width: 96
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,7 +635,7 @@ TextureImporter:
         width: 55
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -721,33 +658,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Level_Lock: -445627720
+      Level_Unlock: 741406918
+      Level_Unlock22: 948568124
       MENU_LEVELSELECTION_1_0: -992595343
       MENU_LEVELSELECTION_1_1: -1314496575
       MENU_LEVELSELECTION_1_10: 475956950
-      MENU_LEVELSELECTION_1_11: 607768851
       MENU_LEVELSELECTION_1_12: 309888279
       MENU_LEVELSELECTION_1_13: 1269719293
       MENU_LEVELSELECTION_1_14: 334435899
       MENU_LEVELSELECTION_1_15: -732642169
-      MENU_LEVELSELECTION_1_16: -822133023
       MENU_LEVELSELECTION_1_17: -1999210414
       MENU_LEVELSELECTION_1_18: -1680051901
-      MENU_LEVELSELECTION_1_19: 1698856790
       MENU_LEVELSELECTION_1_2: -1980402981
       MENU_LEVELSELECTION_1_20: 1390205165
-      MENU_LEVELSELECTION_1_21: -445627720
       MENU_LEVELSELECTION_1_23: -62817569
       MENU_LEVELSELECTION_1_24: 613795305
       MENU_LEVELSELECTION_1_25: -1020574552
-      MENU_LEVELSELECTION_1_26: -1986337559
       MENU_LEVELSELECTION_1_27: -215215802
       MENU_LEVELSELECTION_1_3: 1064683399
       MENU_LEVELSELECTION_1_4: 1801986601
       MENU_LEVELSELECTION_1_5: -232737385
-      MENU_LEVELSELECTION_1_6: 741406918
       MENU_LEVELSELECTION_1_7: 640949669
       MENU_LEVELSELECTION_1_8: -261157775
-      MENU_LEVELSELECTION_1_9: 948568124
+      Star0: 1698856790
+      Star1: -822133023
+      Star2: 607768851
+      Star3: -1986337559
       StarCard: 294359322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

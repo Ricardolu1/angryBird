@@ -207,13 +207,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BUTTONS_4
+      name: Return
       rect:
         serializedVersion: 2
         x: 0
         y: 545
-        width: 121
-        height: 143
+        width: 94
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1151,7 +1151,6 @@ TextureImporter:
       BUTTONS_37: -767518088
       BUTTONS_38: 1507247392
       BUTTONS_39: -435417699
-      BUTTONS_4: 537039973
       BUTTONS_40: -455756247
       BUTTONS_41: 1280152863
       BUTTONS_42: -653569451
@@ -1166,6 +1165,7 @@ TextureImporter:
       Next: -1174964447
       Pause: -164072191
       Restart: 664957838
+      Return: 537039973
       sgg: -1456672628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
